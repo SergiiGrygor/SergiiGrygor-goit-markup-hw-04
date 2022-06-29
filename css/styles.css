@@ -165,11 +165,14 @@ img {
 
 .overlay {
   max-width: 1600px;
-  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero/hero-bg.jpg);
+  
 }
 .hero {
   padding-top: 200px;
@@ -243,11 +246,18 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.feature-icon {
+
+.feature-icon-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
+  
 }
 .feature-title {
   margin-bottom: 10px;
@@ -341,32 +351,31 @@ img {
   margin-right: 10px;
 }
 
-/* Partners */
+/* Clients */
 
 .client-list{
   display: flex;
 }
-.client-item{
+.client-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  color:#afb1b8;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-}
-.client-item:hover,
-.client-item:focus{
-border-color: var(--accent-clr);
-}
-.client-link{
-  color:#afb1b8;
 }
 .client-link:hover,
 .client-link:focus{
   color: var(--accent-clr);
+  border-color: var(--accent-clr);
   
 }
 .client-item:not(:last-child){
   margin-right: 30px;
 }
 .client-icon{
-  padding: 16px 32px;
   fill: currentColor;
 }
 /* Portfolio */
@@ -402,6 +411,7 @@ border-color: var(--accent-clr);
 .filter-button:focus {
   background-color: var(--accent-clr);
   color: var(--white-clr);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Project */
@@ -441,6 +451,11 @@ border-color: var(--accent-clr);
 }
 .project-item {
   border: 1px solid #eeeeee;
+}
+.project-item:hover,
+.project-item:focus{
+ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 
 /* footer */
@@ -492,15 +507,11 @@ border-color: var(--accent-clr);
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .footer-address {
   margin-right: 70px;
 }
-.footer-social {
-  padding-top: 12px;
-  
-}
-
 .join-social-list {
   display: flex;
   justify-content: center;
