@@ -289,7 +289,7 @@ img {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
-  transition-duration:260ms;
+  transition-duration:2600ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden{
