@@ -289,8 +289,8 @@ img {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
-  transition: opasity 260ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibility 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:260ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden{
   opacity: 0;
