@@ -16,7 +16,7 @@
   <title>WebStudio</title>
 </head>
 
-<body>
+<body data-body>
   <!--header-->
   <header class="header">
     <div class="container header-container">
@@ -24,7 +24,7 @@
       <nav class="nav">
         <a class="logo link" href="./index.html"> <span class="logo-web">Web</span>Studio</a>
         <ul class="site-nav-list list">
-          <li class="nav-item"><a class="site-nav-link link" href="./index.html">Студия</a></li>
+          <li class="nav-item"><a class="site-nav-link curent link" href="./index.html">Студия</a></li>
           <li class="nav-item"><a class="site-nav-link link" href="./portfolio.html">Портфолио</a></li>
           <li class="nav-item"><a class="site-nav-link link" href="">Контакты</a></li>
         </ul>
@@ -54,9 +54,19 @@
     <section class="section hero overlay">
       <div class="hero-container container">
         <h1 class="hero-header">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-button btn" type="button">Заказать услугу</button>
+        <button class="hero-button btn " type="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
+    <!-- modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <svg class="icon-close" width="11px" height="11px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <!-- Feature-->
     <section class="section feature">
@@ -403,6 +413,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
