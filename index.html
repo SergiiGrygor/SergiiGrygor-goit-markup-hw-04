@@ -11,8 +11,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- styles -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
   <title>WebStudio</title>
 </head>
 
@@ -24,8 +24,12 @@
       <nav class="nav">
         <a class="logo link" href="./index.html"> <span class="logo-web">Web</span>Studio</a>
         <ul class="site-nav-list list">
-          <li class="nav-item"><a class="site-nav-link curent link" href="./index.html">Студия</a></li>
-          <li class="nav-item"><a class="site-nav-link link" href="./portfolio.html">Портфолио</a></li>
+          <li class="nav-item">
+            <a class="site-nav-link curent link" href="./index.html">Студия</a>
+          </li>
+          <li class="nav-item">
+            <a class="site-nav-link link" href="./portfolio.html">Портфолио</a>
+          </li>
           <li class="nav-item"><a class="site-nav-link link" href="">Контакты</a></li>
         </ul>
       </nav>
@@ -44,7 +48,6 @@
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>+380961111111
           </a>
-
         </li>
       </ul>
     </div>
@@ -54,7 +57,7 @@
     <section class="section hero overlay">
       <div class="hero-container container">
         <h1 class="hero-header">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-button btn " type="button" data-modal-open>Заказать услугу</button>
+        <button class="hero-button btn" type="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
     <!-- modal window -->
@@ -65,6 +68,49 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="user-form" name="user-register-form" autocomplete="on" novalidate>
+          <div role="group" aria-labelledby="form-header">
+            <p class="form-header">Оставьте свои данные, мы вам перезвоним</p>
+            <ul class="modal-form-list list">
+              <li class="modal-form-item">
+                <label class="modal-form-lable" for="name">Имя</label>
+                <input class="modal-form-input" type="text" name="name" placeholder=" "/>
+                <svg class="modal-form-icon" width="12px" height="12px">
+                  <use href="./images/icons.svg#icon-person-blank"></use>
+                </svg>
+              </li>
+              <li class="modal-form-item">
+                <label class="modal-form-lable" for="tel">Телефон</label>
+                <input class="modal-form-input" type="phone" name="phone" placeholder=" "/>
+                <svg class="modal-form-icon" width="12px" height="12px">
+                  <use href="./images/icons.svg#icon-phone-blank"></use>
+                </svg>
+              </li>
+              <li class="modal-form-item">
+                <label class="modal-form-lable" for="mail">Почта</label>
+                <input class="modal-form-input" type="email" name="email" placeholder=" "/>
+                <svg class="modal-form-icon" width="12px" height="12px">
+                  <use href="./images/icons.svg#icon-email-blank"></use>
+                </svg>
+              </li>
+              <li class="modal-form-item">
+                <label class="modal-form-lable" for="comment">Коментарий</label>
+                <textarea name="comment" id="comment" cols="10" rows="" placeholder="Введите текст"></textarea>
+              </li>
+            </ul>
+            <label class="form-checkbox">
+              <input class="form-checkbox-input visually-hidden " type="checkbox" name="user-agreement"/>
+              <span class="form-custom-checkbox">
+                <svg class="form-checkbox-icon" width="12px" height="11px">
+                  <use href="./images/icons.svg#icon-check" ></use>
+                </svg>
+              </span>
+              <span class="form-checkbox-agreement">Соглашаюсь с рассылкой и принимаю <a class="form-checkbox-agreed" href="./index.html">Условия договора</a>
+              </span>
+            </label>
+          </div>
+          <button class="user-form-btn" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
 
@@ -81,7 +127,9 @@
             </div>
 
             <h3 class="feature-title">Внимание к деталям</h3>
-            <p class="feature-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+            <p class="feature-text">
+              Идейные соображения, а также начало повседневной работы по формированию позиции.
+            </p>
           </li>
           <li class="feature-item">
             <div class="feature-icon-box">
@@ -112,7 +160,9 @@
               </svg>
             </div>
             <h3 class="feature-title">Современные технологии</h3>
-            <p class="feature-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            <p class="feature-text">
+              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+            </p>
           </li>
         </ul>
       </div>
@@ -375,8 +425,7 @@
           <ul class="address-list list">
             <li class="address-item">
               <a class="link-address link" href="https://goo.gl/maps/npCChXU9xTYnC5Zz8" target="_blank"
-                rel="noopener noreferrer">г. Киев, пр-т Леси
-                Украинки, 26</a>
+                rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
             </li>
             <li class="address-item">
               <a class="address-list-item link" href="mailto:info@example.com">info@example.com</a>
@@ -419,6 +468,20 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="footer-submit">
+        <form class="submit-form" name="submit-form" autocomplete="on" novalidate>
+          <label class="submit-form-group">
+            <span class="submit-form-text">Подпишитесь на рассылку</span>
+            <input class="submit-form-field" type="mail" name="submit" id="submit" placeholder="E-mail" />
+          </label>
+          <button class="submit-form-button" type="submit">
+            <span class="submit-btn-text"> Подписаться </span>
+            <svg class="submit-icon" width="24px" height="24px">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
   </footer>
